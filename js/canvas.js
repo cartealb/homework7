@@ -25,6 +25,12 @@ window.addEventListener('mousemove', function(e) {
     })
     //Add a listener for the touch move
 
+window.addEventListener('touchmove', function(e) {
+    console.log(e)
+    draw(e.touches[0].pageX, e.touches[0].pageY);
+    ctx.fill();
+})
+
 //Add a listener for the keydown
 window.addEventListener('keydown', function(e) {
     if (e.key == 'b') ctx.fillStyle = 'rgb(0, 0, 255)';
