@@ -12,8 +12,9 @@ var radius = 10;
 //Listeners!!
 //Add a listener for loading the window
 window.addEventListener('load', function(e) {
-        canvas.width = window.screen.width * .75;
-        canvas.height = window.screen.height * .75;
+        console.log(window);
+        canvas.width = window.innerWidth * .75;
+        canvas.height = window.innerHeight * .75;
 
     })
     //Add a listener for the mouse movement
